@@ -59,14 +59,14 @@ function App() {
           <img src={Logo} className="size-28 w-[100px] sm:w-[150px]" id="logo" alt="Logo" />
         </div>
         <ProgressBar />
-        <div className="h-auto customBreakpoint:h-[6rem] flex flex-col overflow-hidden ">
-          <h3 className="font-Helvetica text-white text-[3.5rem] sm:text-[5.25rem] font-[300] ml-10 sm:ml-10 -mt-2" id="text-1">
+        <div className="h-auto customBreakpoint:h-[6rem] flex flex-col overflow-hidden text-center">
+          <h3 className="font-Helvetica text-white text-[3.5rem] sm:text-[5.25rem] font-[300] -mt-2" id="text-1">
             PLINTH
           </h3>
-          <h3 className="font-Helvetica text-neon text-[3.5rem] sm:text-[5.25rem] font-[300] ml-4 sm:ml-10 -mt-1.2 " id="text-2">
+          <h3 className="font-Helvetica text-neon text-[3.5rem] sm:text-[5.25rem] font-[300] lg:ml-8 md:ml-8 -mt-1.2 " id="text-2">
             COMING
           </h3>
-          <h3 className="font-Helvetica text-white text-[3.5rem] sm:text-[5.25rem] font-[300] ml-10 sm:ml-10 -mt-2" id="text-3">
+          <h3 className="font-Helvetica text-white text-[3.5rem] sm:text-[5.25rem] font-[300] -mt-2" id="text-3">
             SOON
           </h3>
         </div>
