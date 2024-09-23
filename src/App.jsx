@@ -29,7 +29,7 @@ function App() {
       y: isSmallScreen ? -60 : -120, // Reduced for smaller screens
       duration: 2,
       ease: 'power2.in',
-      delay: 1.3,
+      delay: 1.2,
     });
 
     t2.to('#text-2', {
