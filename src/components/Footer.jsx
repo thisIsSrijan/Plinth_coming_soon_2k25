@@ -1,82 +1,117 @@
-import React from "react";
-import "./Footer.css";
-import logop from "../assets/PlinthLogo.svg";
-import gdglogo from "../assets/gdglogo.png";
-import facebook from "../assets/facebook.png";
-import email from "../assets/email.png";
-import linkdn from "../assets/linkedin.png";
-import insta from "../assets/instagram.png";
+import React, { useEffect } from 'react';
+import Splide from '@splidejs/splide';
+import '@splidejs/splide/dist/css/splide.min.css';
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+import logo from '../assets/logo.png';
+import linkd from '../assets/insta.png';
+import insta from '../assets/linkd.png';
+import plinthtext2 from '../assets/plinthtext2.png';
+import Home from '../assets/Home.png';
+import Sponsor from '../assets/SPONSOR.png';
+import Register from '../assets/REGISTER.png';
+import Gdg from '../assets/gdg.svg';
+
 const Footer = () => {
+  useEffect(() => {
+    const splide = new Splide('.splide', {
+      type: 'loop',
+      drag: true,
+      autoWidth: false,
+      gap: 1,
+      pagination: false,
+      arrows: false,
+      autoScroll: {
+        speed: 10, // Increased speed
+        pauseOnHover: true,
+      },
+    });
+
+    splide.mount({ AutoScroll });
+
+    return () => splide.destroy();
+  }, []);
+
   return (
-    <div className="Footer_slide">
-      <div className="line"></div>
+    <div className="flex flex-col bg-black items-center justify-center text-white p-10 font-akira ">
+      {/* Navigation Links */}
+      <div className="flex items-center justify-around  w-full px-20">
+        <a href="#"><img src={Register} alt="Register" className="w-[540px] h-[68px]" /></a>
+        <a href="#"><img src={Home} alt="Home" className="w-[540px] h-[78px]" /></a>
+        <a href="#"><img src={Sponsor} alt="Sponsor" className="w-[540px] h-[68px]" /></a>
+      </div>
 
-      <div className="Footer">
-        {/* Logo and Plinth'25 */}
-        <div className="fest-plinth">
-          <img className="plinthlogo" src={logop} alt="" />
-          <h1>PLINTH' 2025</h1>
-        </div>
+      {/* Carousel Section */}
+      <div className="splide w-full mb-4">
+        <div className="splide__track">
+          <ul className="splide__list">
+            <li className="splide__slide">
+            <div className='flex gap-5 items-center justify-center'>
+  {/* Logo */}
+  <img className='mr-5' src={logo} alt="Logo" />
 
-        {/* Contact Information */}
-        <div className="heads">
-          <h2>Contact Us</h2>
-          <ul className="festheads">
-            <div>
-              Yug Aggarwal <br /> 8299099721
-            </div>
-            <div>
-              Rajat Sharma <br /> 8972192855
-            </div>
+  {/* PLINTH with gradient */}
+  <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#999999] to-white text-[250px] font-extrabold  ">
+    PLINTH'' 
+  </h2>
+
+  {/* 25 with custom gradient */}
+  <h2
+  className="text-transparent bg-clip-text text-[250px] font-extrabold  bg-[linear-gradient(90deg,#75B700_0%,#456B02_6.4%,#97E50E_12.4%,#75B700_16.4%,#E1FEAD_24.9%,#82B22D_28.4%,#95E110_48%,#365400_55.9%,#96E30F_60.98%,#8BD30C_66.4%,#C2FD5B_72.39%,#97E50E_83.4%,#97E50E_91.4%,#235300_100%)]"
+>
+  25
+</h2>
+
+</div>
+
+            </li>
+           
           </ul>
         </div>
+      </div>
 
-        {/* Follow us and Developed by */}
-        <div className="social-dev-container">
-          <div className="container1">
-            <h2>Follow us on:</h2>
-            <div className="card">
-              <a
-                className="socialContainer containerOne"
-                href="https://www.instagram.com/plinth.lnmiit/?hl=en"
-              >
-                <img src={insta} alt="" />
-              </a>
-              <a
-                className="socialContainer containerTwo"
-                href="https://www.facebook.com/Plinth.LNMIIT/"
-              >
-                <img src={facebook} alt="" />
-              </a>
-              <a
-                className="socialContainer containerThree"
-                href="https://www.linkedin.com/company/plinthlnmiit/?originalSubdomain=in"
-              >
-                <img src={linkdn} alt="" />
-              </a>
-              <a
-                className="socialContainer containerFour"
-                href="mailto:plinth@lnmiit.ac.in"
-              >
-                <img src={email} alt="Email Icon" />
-              </a>
-            </div>
-          </div>
+      {/* Footer Content */}
+      <div className="flex h-1 w-full bg-white mb-4"></div>
+      <div className="flex items-center justify-around  w-full px-20">
+      <div className="text-center text-5xl">
+  <h2 className="font-akira text-[50px] font-extrabold text-left">YUG AGGRAWAL</h2>
+  <p className="font-poppins text-[30px] font-extrabold leading-[45px] text-center text-5xl">+91 82990 99721</p>
+</div>
 
+        
+        {/* Social Media and Text Logo Section */}
+        <div>
+        <a href="https://www.instagram.com/plinth.lnmiit/?hl=en" target="_blank" rel="noopener noreferrer">
+            <img src={insta} alt="Instagram"  />
+          </a>
           
         </div>
 
-        {/* Address */}
-        <div className="address">
-        <div className="gdg">
-            <h2>Developed & designed by:</h2>
-            
-          </div>
-          &nbsp;&nbsp;&nbsp;
-          The LNM Institute of Information Technology,
-          <br />
-          Rupa ki Nangal, Post-Sumel, Via, Jamdoli, Jaipur, Rajasthan 302031
+        <div>
+        
+            <img src={plinthtext2} alt="Plinth Text Logo"  />
+          
         </div>
+
+        <div>
+        <a href="https://www.linkedin.com/company/plinthlnmiit" target="_blank" rel="noopener noreferrer">
+            <img src={linkd} alt="LinkedIn"  />
+          </a>
+        </div>
+
+        <div className="text-center text-5xl">
+  <h2 className="font-akira text-[50px] font-extrabold text-left">RAJAT SHARMA</h2>
+  <p className="font-poppins text-[30px] font-extrabold leading-[45px] text-center text-5xl">+91 89721 92855</p>
+</div>
+
+      </div>
+
+      <div className="flex h-1 w-full bg-white my-4"></div>
+      
+      {/* Developed By Section */}
+      <div className="flex items-center justify-center gap-5  w-full">
+        <h2 className='text-5xl'>DESIGNED AND DEVELOPED BY:</h2>
+        <img src={Gdg} alt="GDG Logo" />
+        <p className='text-5xl'>Google Developer Groups On Campus</p>
       </div>
     </div>
   );
