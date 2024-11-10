@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         akira: ['"Akira Expanded"', "sans-serif"],
         kodchasan: ['"Kodchasan Light"', "sans-serif"],
+         poppins: ['Poppins', 'sans-serif']
       },
       keyframes: {
         slideIn: {
