@@ -10,7 +10,7 @@ import Aboutlnmiit from "./components/Aboutlnmiit";
 import AboutPlinth from "./components/AboutPlinth";
 import CampusAmbassador from "./components/CampusAmbassador";
 import Events from "./components/Events";
-
+import Footer from "./components/Footer";
 // const Page2 = React.lazy(() => import('./components/Page2'));
 // const Footer = React.lazy(() => import('./components/Footer'));
 
@@ -65,6 +65,7 @@ const App = () => {
 
           <Suspense fallback={<div>Loading Footer...</div>}></Suspense>
         </main>
+        <Footer/>
       </div>
     </div>
   );
