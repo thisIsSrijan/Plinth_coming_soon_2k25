@@ -6,7 +6,7 @@ import logo from '../../assets/logo.png';
 import insta from '../../assets/insta.png';
 import linkd from '../../assets/linkedin.png';
 import plinthtext2 from '../../assets/plinthtext2.png';
-import Home from '../../assets/Home.png';
+import Home from '../../assets/HOME.png';
 import Sponsor from '../../assets/SPONSOR.png';
 import Register from '../../assets/REGISTER.png';
 import Gdg from '../../assets/gdg.svg';
