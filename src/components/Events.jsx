@@ -71,7 +71,13 @@ const Events = () => {
         <div className="flip-card-back text-white flex items-center justify-center border-2 border-green-400 rounded-lg bg-black">
           <div className="flex flex-col items-center justify-center gap-3">
             <h3>{eventName}</h3>
-            <button className="bg-green-500 p-2 rounded-lg">Read More</button>
+            <a
+              href="https://unstop.com/college-fests/plinth-2025-plinth-organising-committee-284543"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-green-500 p-2 rounded-lg">Read More</button>
+            </a>
           </div>
         </div>
       </div>
