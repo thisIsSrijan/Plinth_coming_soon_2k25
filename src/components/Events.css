@@ -48,7 +48,6 @@
   animation: infinite-scroll 90s linear infinite;
 }
 
-/* Card Flip Styles */
 .flip-card {
   perspective: 1000px; /* Enable 3D effect */
 }
