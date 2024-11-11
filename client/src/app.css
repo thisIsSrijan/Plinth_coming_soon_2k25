@@ -1,0 +1,11 @@
+html, body {
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    cursor: none;
+  }
+  
+  /* For Chrome, Safari, and other WebKit browsers */
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  
