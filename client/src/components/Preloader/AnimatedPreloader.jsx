@@ -1,5 +1,5 @@
 import ProgressBar from './ProgressBar'; 
-import Logo from '../assets/PlinthLogo.svg';
+import Logo from '../../assets/PlinthLogo.svg';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react'; 
 

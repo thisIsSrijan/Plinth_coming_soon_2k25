@@ -1,4 +1,4 @@
-import { PlinthLogo } from "../assets/svg";
+import { PlinthLogo } from "../../assets/svg";
 
 const Navbar = () => {
   return (

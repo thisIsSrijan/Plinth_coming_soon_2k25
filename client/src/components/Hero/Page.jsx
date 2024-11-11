@@ -1,10 +1,10 @@
 import { useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import { Glow } from "../assets/svg";
-import { arrow1 } from "../assets/svg";
-import { arrow2 } from "../assets/svg";
+import { Glow } from "../../assets/svg";
+import { arrow1 } from "../../assets/svg";
+import { arrow2 } from "../../assets/svg";
 import "./page.css"
-import CountdownTimer from "./CountdownTimer";
+import CountdownTimer from "../utils/CountdownTimer";
 function throttle(func, delay) {
   let lastCall = 0;
   return (...args) => {

@@ -1,31 +1,30 @@
-import { Glow } from "../assets/svg";
-import { arrow1 } from "../assets/svg";
-import { arrow2 } from "../assets/svg";
-const AboutPlinth = () => {
+import { Glow } from "../../assets/svg";
+import { arrow1 } from "../../assets/svg";
+import { arrow2 } from "../../assets/svg";
+
+const CampusAmbassador = () => {
   return (
     <div className="w-full min-h-screen flex flex-col items-center gap-y-4 relative p-4 mt-32">
       <div className="  max-w-[1110px] w-full flex flex-col justify-between items-center gap-y-4 relative">
         <div className=" w-[80rem] gradient-text mt-2 text-[2rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] 2xl:text-[10rem] customBreakpoint:text-[1.5rem] text-center customBreakpoint:tracking-[0.1rem]">
-          ABOUT
+          CAMPUS
         </div>
 
         <div className="lg:text-[6rem] md:text-[4rem] sm:text-[2.5rem] customBreakpoint:text-[1.5rem] text-center font-extrabold xxv-gradient">
-          PLINTH'25
+          AMBASSADOR
         </div>
 
         <div className="text-[1rem] sm:text-[1.2rem] md:text-[1.5rem] lg:text-[1.8rem] customBreakpoint:text-[0.8rem] text-justify font-medium mt-4 px-4">
-        Plinth, the annual techno-management fest of LNMIIT Jaipur, is a three-day celebration of innovation, competition, and intellectual engagement, drawing students and tech enthusiasts from across India. Recognized as one of the nation’s leading college tech fests, Plinth combines emerging technologies with immersive experiences, creating an inspiring environment for all attendees.
+        Plinth offers an exciting part-time opportunity for students to engage in multiple fields like programming, gaming, Model United Nations (MUN), and more. As a Campus Ambassador, you’ll represent one of India’s most prestigious techno-management fests at your college, playing a key role in spreading awareness about Plinth’s events, schedules, and opportunities. Your mission will be to encourage participation, create a buzz, and engage your peers in the fest’s diverse activities, while networking with professionals and tech enthusiasts from universities across the country.
 
-This year’s edition of Plinth offers a dynamic lineup that extends beyond Web3, embracing advanced fields like robotics, artificial intelligence, and cybersecurity. From intense hackathons to an exhilarating Robotics nexus and the esteemed Model United Nations, every event is designed to challenge, inspire, and foster innovation. Additionally, the renowned Talk Series will feature distinguished personalities from the tech world, sharing invaluable insights and sparking meaningful conversations on the future of technology—all as part of this exciting, multifaceted experience.
+In return, you’ll enjoy a range of exclusive perks, including exciting prizes, certificates, free entry and registration, event goodies, Pronite passes, and Letters of Recommendation (LoR) for your efforts. This is your chance to make lasting connections and be part of a dynamic community that celebrates innovation, creativity, and collaboration.
 
-Plinth is all set to welcome you to this extraordinary three-day fusion of science, technology, and celebration from January XYZ to ABC, 2025.
-
-Code. Create. Celebrate: Plinth!
+Join the Plinth family today and help us make this year’s fest an unforgettable experience for all!
         </div>
 
         <div className="mt-6 md:mb-44 customBreakpoint:mb-24">
           <button className="w-[10rem] h-[3rem] sm:w-[12rem] sm:h-[3.5rem] md:w-[14rem] md:h-[4rem] rounded-[0.5rem] border-2 border-[#75B700] text-[1.2rem] sm:text-[1.5rem] font-bold ">
-            Register
+            JOIN US
           </button>
         </div>
 
@@ -48,4 +47,4 @@ Code. Create. Celebrate: Plinth!
   )
 }
 
-export default AboutPlinth
+export default CampusAmbassador

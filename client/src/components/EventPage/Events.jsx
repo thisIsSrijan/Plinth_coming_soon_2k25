@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactSVG } from "react-svg";
 import "./Events.css";
-import { Card1, Card2, Card3 } from "../assets/EventsCard/svg";
+import { Card1, Card2, Card3 } from "../../assets/EventsCard/svg";
 
 const Events = () => {
   const eventNames = [

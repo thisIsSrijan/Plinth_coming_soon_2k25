@@ -1,16 +1,16 @@
 import React from "react";
 import { useState, useEffect, Suspense } from "react";
-import CustomCursor from "./components/CustomCursor";
-import ParticlesComponent from "./components/Particle";
-import Page from "./components/Page";
-import Navbar from "./components/Navbar";
-import AnimatedPreloader from "./components/AnimatedPreloader";
+import CustomCursor from "./components/utils/CustomCursor";
+import ParticlesComponent from "./components/utils/Particle";
+import Page from "./components/Hero/Page";
+import Navbar from "./components/Navbar/Navbar";
+import AnimatedPreloader from "./components/Preloader/AnimatedPreloader";
 import "./app.css";
-import Aboutlnmiit from "./components/Aboutlnmiit";
-import AboutPlinth from "./components/AboutPlinth";
-import CampusAmbassador from "./components/CampusAmbassador";
-import Events from "./components/Events";
-import Footer from "./components/Footer";
+import Aboutlnmiit from "./components/About/Aboutlnmiit";
+import AboutPlinth from "./components/About/AboutPlinth";
+import CampusAmbassador from "./components/About/CampusAmbassador";
+import Events from "./components/EventPage/Events";
+import Footer from "./components/Footer/Footer";
 // const Page2 = React.lazy(() => import('./components/Page2'));
 // const Footer = React.lazy(() => import('./components/Footer'));
 

@@ -2,14 +2,14 @@ import React, { useEffect } from 'react';
 import Splide from '@splidejs/splide';
 import '@splidejs/splide/dist/css/splide.min.css';
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
-import logo from '../assets/logo.png';
-import insta from '../assets/insta.png';
-import linkd from '../assets/linkedin.png';
-import plinthtext2 from '../assets/plinthtext2.png';
-import Home from '../assets/Home.png';
-import Sponsor from '../assets/SPONSOR.png';
-import Register from '../assets/REGISTER.png';
-import Gdg from '../assets/gdg.svg';
+import logo from '../../assets/logo.png';
+import insta from '../../assets/insta.png';
+import linkd from '../../assets/linkedin.png';
+import plinthtext2 from '../../assets/plinthtext2.png';
+import Home from '../../assets/Home.png';
+import Sponsor from '../../assets/SPONSOR.png';
+import Register from '../../assets/REGISTER.png';
+import Gdg from '../../assets/gdg.svg';
 
 const Footer = () => {
   useEffect(() => {
@@ -108,10 +108,10 @@ const Footer = () => {
       <div className="flex h-1 w-full bg-white"></div>
       
       {/* Developed By Section */}
-      <div className="flex items-center justify-center gap-5  w-full">
-        <h2 className=''>DESIGNED AND DEVELOPED BY:</h2>
-        <img className='h-8 w-8' src={Gdg} alt="GDG Logo" />
-        <p className=''>Google Developer Groups On Campus</p>
+      <div className="flex items-center justify-center gap-5 py-4 text-xl  w-full font-sans">
+      <img className='h-8 w-8' src={Gdg} alt="GDG Logo" />
+        <h2 className=''>Designed & Developed by <span className=''>GDG On Campus</span> - LNMIIT, Jaipur</h2>
+        {/* <p className=''></p> */}
       </div>
     </div>
   );
