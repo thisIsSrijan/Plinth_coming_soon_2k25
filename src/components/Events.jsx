@@ -1,48 +1,82 @@
 import React from "react";
 import { ReactSVG } from "react-svg";
 import "./Events.css";
-// Import SVGs directly
 import { Card1, Card2, Card3 } from "../assets/EventsCard/svg";
-import { Glow } from "../assets/svg";
 
 const Events = () => {
+  const eventNames = [
+    "THE LNMIIT MUN 25’",
+    "Change My Mind",
+    "Robowars",
+    "ROBOCUP",
+    "ROBORACE",
+    "MOTOBOAT",
+    "LNM TECH EXPO",
+    "ROBO TRANSPORTER",
+    "Maze Solver",
+    "RC PLANE",
+    "DRONE RACING",
+    "MICRO MOUSE",
+    "CASECRAFT: HACK & HUSTLE",
+    "LNMHacks 7.0",
+    "SUSTAIN-A-THON",
+    "Idea Hackathon",
+    "CodeCraft",
+    "Talk Series",
+    "BeatLab",
+    "CreatiFrenzy",
+    "Pixelated Wars",
+    "IUPC",
+    "Enigma",
+    "CP Duels",
+    "Coding Cascade",
+    "Alice, Bob, Go!",
+    "Brahmaand: The Space Ideathon",
+    "Starpix",
+    "Astromemia",
+    "Dhoomketu",
+    "CRYPTEX",
+    "IPL Auction",
+    "BRANDWAGON",
+    "BIZMINDS",
+    "PITCH ON THE ROCKS",
+  ];
+
+  // Duplicate event names to increase the number of cards
+  const extendedEventNames = [...eventNames, ...eventNames, ...eventNames];
+
   const svgPaths = [Card1, Card2, Card3];
-  const cards = Array.from({ length: 10 }, (_, index) =>
-    svgPaths.map((path, cardIndex) => (
-      <li
-        key={`${Math.random()}-${cardIndex}`}
-        className="m-2 w-[250px] h-[350px] flip-card" // Adjust height for better visibility
-      >
-        <div className="flip-card-inner">
-          {/* Front Side */}
-          <div className="flip-card-front">
-            <ReactSVG
-              src={path}
-              beforeInjection={(svg) => {
-                svg.setAttribute("width", "100%");
-                svg.setAttribute("height", "100%");
-              }}
-              wrapper="span"
-              loading={() => (
-                <span className="w-full h-full flex items-center justify-center">
-                  Loading...
-                </span>
-              )}
-            />
-          </div>
-          {/* Back Side */}
-          <div className="flip-card-back">
-            <div className="flex flex-col items-center justify-center gap-3 text-white">
-              <h3>EVENT </h3>
-              <button className="bg-green-500 text-white p-2 rounded-lg">
-                Read More
-              </button>
-            </div>
+
+  // Generate cards with each unique event name and correspondi ng SVG
+  const cards = extendedEventNames.map((eventName, index) => (
+    <li key={index} className="m-2 w-[250px] h-[350px] flip-card">
+      <div className="flip-card-inner">
+        {/* Front Side */}
+        <div className="flip-card-front flex items-center justify-center">
+          <ReactSVG
+            src={svgPaths[index % svgPaths.length]} // Cycle through SVGs if more events than SVGs
+            beforeInjection={(svg) => {
+              svg.setAttribute("width", "100%");
+              svg.setAttribute("height", "100%");
+            }}
+            wrapper="span"
+            loading={() => (
+              <span className="w-full h-full flex items-center justify-center">
+                Loading...
+              </span>
+            )}
+          />
+        </div>
+        {/* Back Side */}
+        <div className="flip-card-back text-white flex items-center justify-center border-2 border-green-400 rounded-lg bg-black">
+          <div className="flex flex-col items-center justify-center gap-3">
+            <h3>{eventName}</h3>
+            <button className="bg-green-500 p-2 rounded-lg">Read More</button>
           </div>
         </div>
-      </li>
-    ))
-  ).flat();
+      </div>
+    </li>
+  ));
 
   return (
     <div className="h-screen overflow-hidden flex gap-[6vh] flex-col justify-center bg-black">
