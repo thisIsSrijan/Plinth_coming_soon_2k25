@@ -22,27 +22,27 @@ const CountdownTimer = () => {
     }, []);
 
     return (
-        <div className='container mx-auto mb-[0.5rem] flex items-center justify-center p-0'>
-            <div className="flex text-white text-center gap-x-10 md:gap-x-20 lg:gap-x-44 md:mt-2">
-                <div className='font-kodchasan'>
+        <div className=' container mx-auto mb-[0.5rem] flex items-center justify-center p-0'>
+            <div className="flex text-white text-center gap-x-10 md:gap-x-20 lg:gap-x-[10vw] md:mt-2">
+                <div className='font-kodchasan w-[10vw]'>
                     <h1 className='text-2xl sm:text-4xl lg:text-6xl font-semibold'>
                         {days < 10 ? "0" + days : days}
                     </h1>
                     <span className='text-sm sm:text-lg lg:text-2xl font-bold'>Days</span>
                 </div>
-                <div className='font-kodchasan'>
+                <div className='font-kodchasan w-[10vw]'>
                     <h1 className='text-2xl sm:text-4xl lg:text-6xl font-semibold'>
                         {hours < 10 ? "0" + hours : hours}
                     </h1>
                     <span className='text-sm sm:text-lg lg:text-2xl font-bold'>Hours</span>
                 </div>
-                <div className='font-kodchasan'>
+                <div className='font-kodchasan w-[10vw]'>
                     <h1 className='text-2xl sm:text-4xl lg:text-6xl font-semibold'>
                         {mins < 10 ? "0" + mins : mins}
                     </h1>
                     <span className='text-sm sm:text-lg lg:text-2xl font-bold'>Mins</span>
                 </div>
-                <div className='font-kodchasan'>
+                <div className='font-kodchasan w-[10vw]'>
                     <h1 className='text-2xl sm:text-4xl lg:text-6xl font-semibold'>
                         {secs < 10 ? "0" + secs : secs}
                     </h1>

@@ -1,9 +1,10 @@
 import { Glow } from "../../assets/svg";
 import { arrow1 } from "../../assets/svg";
 import { arrow2 } from "../../assets/svg";
+import Example from "../utils/Example";
 const AboutPlinth = () => {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center gap-y-4 relative p-4 mt-32">
+    <div className="w-full min-h-screen flex flex-col items-center gap-y-4 relative lg:p-4 lg:mt-32 sm:mt-10 customBreakpoint:mt-5 customBreakpoint:p-0">
       <div className="  max-w-[1110px] w-full flex flex-col justify-between items-center gap-y-4 relative">
         <div className=" w-[80rem] gradient-text mt-2 text-[2rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] 2xl:text-[10rem] customBreakpoint:text-[1.5rem] text-center customBreakpoint:tracking-[0.1rem]">
           ABOUT
@@ -18,15 +19,16 @@ const AboutPlinth = () => {
 
 This year’s edition of Plinth offers a dynamic lineup that extends beyond Web3, embracing advanced fields like robotics, artificial intelligence, and cybersecurity. From intense hackathons to an exhilarating Robotics nexus and the esteemed Model United Nations, every event is designed to challenge, inspire, and foster innovation. Additionally, the renowned Talk Series will feature distinguished personalities from the tech world, sharing invaluable insights and sparking meaningful conversations on the future of technology—all as part of this exciting, multifaceted experience.
 
-Plinth is all set to welcome you to this extraordinary three-day fusion of science, technology, and celebration from January XYZ to ABC, 2025.
+Plinth is all set to welcome you to this extraordinary three-day fusion of science, technology, and celebration from January 24 to 26, 2025.
 
 Code. Create. Celebrate: Plinth!
         </div>
 
-        <div className="mt-6 md:mb-44 customBreakpoint:mb-24">
-          <button className="w-[10rem] h-[3rem] sm:w-[12rem] sm:h-[3.5rem] md:w-[14rem] md:h-[4rem] rounded-[0.5rem] border-2 border-[#75B700] text-[1.2rem] sm:text-[1.5rem] font-bold ">
-            Register
-          </button>
+        
+       <div className="mt-6 md:mb-44 customBreakpoint:mb-24">
+          <a href="https://unstop.com/college-fests/plinth-2025-plinth-organising-committee-284543" target="_blank" rel="noopener noreferrer">
+            <Example targetText="REGISTER" />
+          </a>
         </div>
 
         <div className="overflow-hidden absolute top-[80%] w-[30rem] h-[30rem] sm:w-[40rem]   lg:w-[60rem] lg:h-[60rem] z-10 hidden md:block md:mt-[-61rem] lg:mt-[-77rem] xl:mt-[]">

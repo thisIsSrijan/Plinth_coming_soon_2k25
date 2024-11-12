@@ -56,8 +56,8 @@ const App = () => {
         {/* Content Container */}
         <main className="flex-grow mt-[24px]">
           <Page />
-          <AboutPlinth />
           <Aboutlnmiit />
+          <AboutPlinth />
           <CampusAmbassador />
           <Events />
 
