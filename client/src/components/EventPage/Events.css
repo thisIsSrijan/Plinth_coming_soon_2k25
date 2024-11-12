@@ -45,7 +45,7 @@
 
 /* Animation Class */
 .animate-infinite-scroll {
-  animation: infinite-scroll 90s linear infinite;
+  animation: infinite-scroll 50s linear infinite;
 }
 
 .flip-card {
