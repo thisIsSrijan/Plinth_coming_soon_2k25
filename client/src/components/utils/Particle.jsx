@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
@@ -96,6 +96,10 @@ const ParticlesComponent = (props) => {
   );
 
   return <Particles id={props.id} init={particlesLoaded} options={options} />;
+};
+
+ParticlesComponent.propTypes = {
+  id: PropTypes.string.isRequired, 
 };
 
 export default ParticlesComponent;

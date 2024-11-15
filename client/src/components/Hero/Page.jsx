@@ -59,20 +59,19 @@ const Page = () => {
 
   return (
     
-    <section className="w-full mt-[2rem] min-h-screen flex items-center justify-center">
+    <section className="w-full mt-[2rem] overflow-y-hidden min-h-screen flex items-center justify-center">
       <div className="relative overflow-y-hidden w-full flex flex-col items-center">
         
-        <div className="relative  w-full flex flex-col items-center">
+        <div className="relative w-full flex flex-col overflow-x-hidden overflow-y-hidden items-center">
         
           <div className="relative">
-
-            <div className="absolute xsm:w-[20rem] xsm:top-[40rem] md:w-[40rem] md:top-[33rem] lg:top-[33rem] lg:w-[60rem] top-[26rem] w-[60rem] h-[65rem] -z-10 overflow-hidden glow1 overflow-y-hidden">
+          <div className="absolute xsm:w-[20rem] xsm:top-[40rem] md:w-[40rem] md:top-[33rem] lg:top-[33rem] lg:w-[60rem] top-[26rem] w-[60rem] h-[65rem] -z-10 overflow-hidden glow1 overflow-y-hidden">
               <img 
                 src={Glow} 
                 alt="Plinth Glow" 
                 className="w-full h-auto"
               />
-            </div>
+            </div> 
 
             <div
               onMouseMove={onMouseMove}
@@ -81,7 +80,7 @@ const Page = () => {
                 transform: `perspective(1000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg) scale3d(1, 1, 1)`,
                 transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
               }}
-              className="text-transparent bg-Green-gradient bg-clip-text text-[3rem] sm:text-[4rem] md:text-[6rem] lg:text-[10em] xl:text-[12rem] 2xl:text-[14rem] font-extrabold font-akira leading-none tracking-[0.5rem] sm:tracking-[1.2rem] md:tracking-[1.7rem] relative"
+              className="text-transparent bg-Green-gradient bg-clip-text text-[3rem] sm:text-[4rem] md:text-[6rem] lg:text-[10em] xl:text-[12rem] 2xl:text-[14rem]  font-extrabold font-akira leading-none tracking-[0.5rem] sm:tracking-[1.2rem] md:tracking-[1.7rem] overflow-y-hidden relative"
             >
               PLINTH
             </div>
@@ -115,19 +114,6 @@ const Page = () => {
               ))}
             </h1>
           </div>
-
-          {/* <motion.div
-            initial={{ opacity: 0, filter: "blur(10px)" }}
-            animate={
-              showComingSoon
-                ? { opacity: 1, filter: "blur(0px)" }
-                : { opacity: 0, filter: "blur(10px)" }
-            }
-            transition={{ duration: 1.5 }}
-            className="h-[5rem] bg-white sm:h-[5rem] flex items-center justify-center mt-6"
-          >
-            
-          </motion.div> */}
           <CountdownTimer />
 
           {/* Arrows */}
@@ -164,6 +150,6 @@ const Page = () => {
       </div>
     </section>
   );
-};
+};  
 
 export default Page;
