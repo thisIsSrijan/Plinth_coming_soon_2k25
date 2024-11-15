@@ -1,13 +1,14 @@
 import { PlinthLogo } from "../../assets/svg";
-
-const Navbar = () => {
+import PropTypes from "prop-types";
+const Navbar = ({ showContent }) => {
   return (
-    <div className="fixed md:top-[0.6rem] top-[0.5rem] left-0 w-full text-white flex items-center justify-between h-[4rem] sm:h-[5rem] px-4 sm:px-8 md:px-16 lg:px-20 z-50 bg-transparent">
-      <div className="flex items-center">
+    <div className={`fixed w-full left-0 sm:top-[0rem] md:top-[0rem] xl:top-[0rem] lg:top-[0rem] min-w-full text-white flex items-center justify-between lg:h-[5rem] sm:h-[5rem] px-4 sm:px-8 md:px-16 lg:px-20 z-50 bg-transparent transition-opacity duration-500 ease-in-out ${
+        showContent ? "opacity-100" : "opacity-0" }`}>
+      <div className="flex  sm:h-[5rem] lg:h-[5rem] items-center">
         <img
           src={PlinthLogo}
           alt="Plinth Logo"
-          className="h-[3rem] w-auto sm:h-[4rem] md:h-[5rem] lg:h-[6rem]"
+          className="h-full w-full"
         />
       </div>
       <div className="px-[1rem] flex flex-nowrap">
@@ -18,6 +19,10 @@ const Navbar = () => {
       
     </div>
   );
+};
+
+Navbar.propTypes = {
+  showContent: PropTypes.bool.isRequired,
 };
 
 export default Navbar;

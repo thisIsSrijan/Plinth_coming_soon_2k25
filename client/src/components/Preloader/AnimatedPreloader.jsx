@@ -1,7 +1,7 @@
-import ProgressBar from './ProgressBar'; 
+import ProgressBar from './ProgressBar';
 import Logo from '../../assets/PlinthLogo.svg';
 import gsap from 'gsap';
-import { useGSAP } from '@gsap/react'; 
+import { useGSAP } from '@gsap/react';
 
 const AnimatedPreloader = () => {
   useGSAP(() => {
@@ -11,33 +11,33 @@ const AnimatedPreloader = () => {
     const isSmallScreen = window.innerWidth < 840;
 
     tl.from('#text-1', {
-      y: isSmallScreen ? 90 : 90,
+      y: isSmallScreen ? 90 : 90, 
       duration: 1,
       ease: 'power2.in',
     });
 
     tl.to('#text-1', {
-      y: isSmallScreen ? -80 : -100,
+      y: isSmallScreen ? -80 : -100, 
       duration: 2,
       ease: 'power4.out',
       delay: 0.75,
     }).call(() => t2.play());
 
     gsap.to('#text-2', {
-      y: isSmallScreen ? -60 : -120,
+      y: isSmallScreen ? -60 : -120, 
       duration: 2,
       ease: 'power2.in',
       delay: 1.2,
     });
 
     t2.to('#text-2', {
-      y: isSmallScreen ? -160 : -220,
+      y: isSmallScreen ? -160 : -220, 
       duration: 1.5,
       ease: 'power2.out',
     });
 
     tl.to('#text-3', {
-      y: isSmallScreen ? -150 : -240,
+      y: isSmallScreen ? -150 : -240, 
       duration: 1.75,
       ease: 'power2.out',
     });
