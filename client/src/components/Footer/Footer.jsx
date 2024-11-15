@@ -65,10 +65,12 @@ const Footer = () => {
       </div>
       
       <div className='z-10 text-black absolute bottom-0 w-full flex justify-center items-center ' style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <a href="https://gdg.community.dev/gdg-on-campus-the-lnm-institute-of-information-technology-jaipur-india/" target="_blank" rel="noopener noreferrer">
         <p className="font-poppins text-[12px] sm:text-[16px] xsm:text-[10px] md:text-2xl font-normal tracking-[0.16em] text-center">
           <img src={Gdg} alt="GDG logo" className="inline-block w-8 h-8 mr-3" />
-          Designed and developed by GDG on Campus, LNMIIT
+          Designed and Developed by GDG on Campus, LNMIIT
         </p>
+        </a>
       </div>
     </div>
   );
