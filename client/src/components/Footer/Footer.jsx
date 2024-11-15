@@ -1,6 +1,6 @@
 import insta from '../../assets/insta.png';
 import linkd from '../../assets/linkedin.png';
-import plinthtext2 from '../../assets/plinthtext2.png';
+import plinthtext2 from '../../assets/Logo.svg';
 import Gdg from '../../assets/gdg.svg';
 import Web from '../../assets/Web.png';
 import Phone from '../../assets/Phone.png'; // Make sure this is the phone image
@@ -10,7 +10,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <div className='w-full relative flex-col flex-wrap'>
-      <div className='flex flex-wrap w-full justify-around items-center p-10 bg-black z-10 mb-10'>
+      <div className='flex flex-wrap w-full justify-around items-center p-10 bg-black z-10'>
         <div className='flex-col flex gap-5'>
           <h2 className="text-center font-poppins font-normal tracking-[0.16em] text-2xl md:text-4xl sm:text-lg">
             Get In Touch

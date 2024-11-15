@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import "./app.css";
 import PreloaderWrapper from "./components/Preloader/PreloaderWrapper";
 import UsePreloader from "./hooks/UsePreloader";
+import Footer from "./components/Footer/Footer.jsx";
 const AboutLNMIIT = React.lazy(() => import("./components/About/AboutLNMIIT.jsx"));
 const AboutPlinth = React.lazy(() => import("./components/About/AboutPlinth.jsx"))
 const CampusAmbassador = React.lazy(() => import("./components/About/CampusAmbassador"));
@@ -25,6 +26,7 @@ const App = () => {
           <Suspense fallback={<div>Loading Events...</div>}><CampusAmbassador /></Suspense>
           <Suspense fallback={<div>Loading Events...</div>}><Events /></Suspense>
         </main>
+        <Footer/>
     </div>
   );
 };
