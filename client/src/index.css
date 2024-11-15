@@ -14,16 +14,15 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-
 .gradient-text {
   font-size: 250px; /* Large font size */
   font-weight: 900; /* Bold font weight */
   color: transparent; /* Make text transparent to show gradient only */
   -webkit-text-stroke: 12px transparent;
   background-image: linear-gradient(90deg, #75B700, #456B02, #97E50E, #75B700, #E1FEAD, #82B22D, #95E110, #365400, #96E30F, #8BD30C, #C2FD5B, #97E50E, #235300); /* Multi-color gradient */
-  background-clip: text; /* Clip the background gradient to the text */
+  -webkit-background-clip: text; /* Clip the background gradient to the text */
   -webkit-text-fill-color: black; /* Make the fill transparent */
-  -webkit-text-stroke-color: linear-gradient(90deg, #75B700, #456B02, #97E50E, #75B700, #E1FEAD, #82B22D, #95E110, #365400, #96E30F, #8BD30C, #C2FD5B, #97E50E, #235300);  /* Set stroke (outline) color to gradient */
+  -webkit-text-stroke-color: linear-gradient(90deg, #75B700, #456B02, #97E50E, #75B700, #E1FEAD, #82B22D, #95E110, #365400, #96E30F, #8BD30C, #C2FD5B, #97E50E, #235300);  /* Set stroke (outline) color to gradient */
 }
 
 
@@ -67,6 +66,5 @@ html::-webkit-scrollbar {
   .gradient-text {
     font-size: 300px;
     -webkit-text-stroke: 14px transparent;
-
   }
 }

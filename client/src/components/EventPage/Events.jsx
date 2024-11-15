@@ -65,26 +65,26 @@ const Events = () => {
   }, [isHoveredRow1, isHoveredRow2]);
 
   return (
-    <div className="h-max-screen flex gap-[13vh] sm:gap-[6vh] lg:gap-[4vh] flex-col justify-center bg-black">
+    <div className="h-max-screen flex gap-[13vh] sm:gap-[6vh] lg:gap-[4vh] flex-col justify-center bg-black ">
       {/* Title Section */}
       <div className="h-[6vh] sm:h-[7vh] md:h-[10vh] lg:h-[15vh] w-full flex items-center justify-center">
-        <div className="gradient-text inter-bold mt-2 tracking-widest font text-[2rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] 2xl:text-[10rem] customBreakpoint:text-[1.5rem]">
+        <div className="gradient-text inter-bold mt-2 tracking-widest font xsm:text-[3rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] 2xl:text-[10rem] ">
           EVENTS
         </div>
       </div>
 
       {/* Carousel Section */}
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 md:mt-16 ">
         {/* First Row */}
         <div
-          className="h-[20vh] sm:h-[20vh] md:h-[20vh] lg:h-[20vh] xl:h-[40vh] 2xl:h-[40vh] w-full overflow-hidden"
+          className=" xsm:h-[280px] sm:h-[240px] md:h-[290px] lg:h-[300px] xl:h-[330px] 2xl:h-[350px] w-full overflow-hidden"
           onMouseEnter={() => setIsHoveredRow1(true)}
           onMouseLeave={() => setIsHoveredRow1(false)}
         >
           <div className="relative h-full">
             {/* First set of cards */}
             <div
-              className="absolute flex items-center gap-[10vw]"
+              className="absolute flex items-center gap-[125px]"
               style={{ transform: `translateX(${scrollPosition1}%)` }}
             >
               {eventNames.slice(0, 10).map((event, index) => (
@@ -93,7 +93,7 @@ const Events = () => {
             </div>
             {/* Duplicate set for seamless loop */}
             <div
-              className="absolute flex items-center gap-[10vw]"
+              className="absolute flex items-center gap-[125px]"
               style={{ transform: `translateX(${scrollPosition1 + 103}%)` }}
             >
               {eventNames.slice(0, 10).map((event, index) => (
@@ -105,14 +105,14 @@ const Events = () => {
 
         {/* Second Row */}
         <div
-          className="h-[20vh] sm:h-[20vh] md:h-[20vh] lg:h-[20vh] xl:h-[40vh] 2xl:h-[40vh] w-full overflow-hidden"
+          className=" xsm:h-[280px] sm:h-[240px] md:h-[290px] lg:h-[300px] xl:h-[330px] 2xl:h-[350px] w-full overflow-hidden"
           onMouseEnter={() => setIsHoveredRow2(true)}
           onMouseLeave={() => setIsHoveredRow2(false)}
         >
           <div className="relative h-full">
             {/* First set of cards */}
             <div
-              className="absolute flex items-center gap-[10vw]"
+              className="absolute flex items-center gap-[125px]"
               style={{ transform: `translateX(${scrollPosition2}%)` }}
             >
               {eventNames.slice(10, 20).map((event, index) => (
@@ -121,7 +121,7 @@ const Events = () => {
             </div>
             {/* Duplicate set for seamless loop */}
             <div
-              className="absolute flex items-center gap-[10vw]"
+              className="absolute flex items-center gap-[125px]"
               style={{ transform: `translateX(${scrollPosition2 - 103}%)` }}
             >
               {eventNames.slice(10, 20).map((event, index) => (
