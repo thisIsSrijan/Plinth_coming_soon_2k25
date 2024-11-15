@@ -29,7 +29,7 @@ const About = ({
         <div className="overflow-hidden absolute top-[95%] w-[30rem] h-[30rem] sm:w-[40rem] lg:w-[60rem] lg:h-[60rem] z-[-1] hidden md:block md:mt-[-61rem] lg:mt-[-77rem]">
             <img src={glow} alt="Background Glow" className="w-full h-full object-cover" />
           </div>
-          <div className="w-[80rem] gradient-text mt-2 text-[2rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] 2xl:text-[10rem] customBreakpoint:text-[3rem] text-center customBreakpoint:tracking-[0.1rem]">
+          <div className="w-[80rem] gradient-text mt-2 text-[2rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] 2xl:text-[10rem] customBreakpoint:text-[3rem] text-center xsm:tracking-[0.1rem]">
             {title}
           </div>
 
