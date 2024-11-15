@@ -52,7 +52,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className='xsm:mb-6'>
             <p className="text-center font-poppins text-[10px] sm:text-[14px] md:text-[20px]">
               <a href="#">About Us</a>
             </p>
@@ -65,7 +65,7 @@ const Footer = () => {
       </div>
       
       <div className='z-10 text-black absolute bottom-0 w-full flex justify-center items-center ' style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <p className="font-poppins text-[12px] sm:text-[16px] md:text-2xl font-normal tracking-[0.16em] text-center">
+        <p className="font-poppins text-[12px] sm:text-[16px] xsm:text-[10px] md:text-2xl font-normal tracking-[0.16em] text-center">
           <img src={Gdg} alt="GDG logo" className="inline-block w-8 h-8 mr-3" />
           Designed and developed by GDG on Campus, LNMIIT
         </p>
