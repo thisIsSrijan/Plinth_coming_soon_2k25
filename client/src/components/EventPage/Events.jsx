@@ -1,7 +1,42 @@
 import { useState, useEffect } from "react";
 import "./Events.css";
 import Card from "./Card";
-import img from "../../assets/Events_Images/images5.png";
+import {
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+  img12,
+  img13,
+  img14,
+  img15,
+  img16,
+  img17,
+  img18,
+  img19,
+  img20,
+  img21,
+  img22,
+  img23,
+  img24,
+  img25,
+  img26,
+  img27,
+  img28,
+  img29,
+  img30,
+  img31,
+  img32,
+  img33,
+  img34,
+} from "../../assets/Events_Images/image";
 
 const Events = () => {
   const [scrollPosition1, setScrollPosition1] = useState(0);
@@ -9,42 +44,41 @@ const Events = () => {
   const [isHoveredRow1, setIsHoveredRow1] = useState(false);
   const [isHoveredRow2, setIsHoveredRow2] = useState(false);
 
-  const eventNames = [
-    "THE LNMIIT MUN 25'",
-    "Change My Mind",
-    "Robowars",
-    "ROBOCUP",
-    "ROBORACE",
-    "MOTOBOAT",
-    "LNM TECH EXPO",
-    "ROBO TRANSPORTER",
-    "Maze Solver",
-    "RC PLANE",
-    "DRONE RACING",
-    "MICRO MOUSE",
-    "CASECRAFT: HACK & HUSTLE",
-    "LNMHacks 7.0",
-    "SUSTAIN-A-THON",
-    "Idea Hackathon",
-    "CodeCraft",
-    "Talk Series",
-    "BeatLab",
-    "CreatiFrenzy",
-    "Pixelated Wars",
-    "IUPC",
-    "Enigma",
-    "CP Duels",
-    "Coding Cascade",
-    "Alice, Bob, Go!",
-    "Brahmaand: The Space Ideathon",
-    "Starpix",
-    "Astromemia",
-    "Dhoomketu",
-    "CRYPTEX",
-    "IPL Auction",
-    "BRANDWAGON",
-    "BIZMINDS",
-    "PITCH ON THE ROCKS",
+  const events = [
+    { name: "THE LNMIIT MUN 25'", image: img14 },
+    { name: "Change My Mind", image: img15 },
+    { name: "Robowars", image: img21 },
+    { name: "ROBOCUP", image: img22 },
+    { name: "ROBORACE", image: img23 },
+    { name: "MOTOBOAT", image: img24 },
+    { name: "LNM TECH EXPO", image: img25 },
+    { name: "ROBO TRANSPORTER", image: img26 },
+    { name: "Maze Solver", image: img27 },
+    { name: "RC PLANE", image: img28 },
+    { name: "DRONE RACING", image: img29 },
+    { name: "MICRO MOUSE", image: img30 },
+    { name: "CASECRAFT: HACK & HUSTLE", image: img2 },
+    { name: "LNMHacks 7.0", image: img1 },
+    { name: "SUSTAIN-A-THON", image: img3 },
+    { name: "CodeCraft", image: img16 },
+    { name: "Talk Series", image: img17 },
+    { name: "BeatLab", image: img18 },
+    { name: "CreatiFrenzy", image: img19 },
+    { name: "Pixelated Wars", image: img20 },
+    { name: "IUPC", image: img9 },
+    { name: "Enigma", image: img10 },
+    { name: "CP Duels", image: img11 },
+    { name: "Coding Cascade", image: img12 },
+    { name: "Alice, Bob, Go!", image: img13 },
+    { name: "Brahmaand: The Space Ideathon", image: img5 },
+    { name: "Starpix", image: img6 },
+    { name: "Astromemia", image: img7 },
+    { name: "Dhoomketu", image: img8 },
+    { name: "CRYPTEX", image: img31 },
+    { name: "IPL Auction", image: img32 },
+    { name: "BRANDWAGON", image: img33 },
+    { name: "BIZMINDS", image: img34 },
+    { name: "PITCH ON THE ROCKS", image: img4 },
   ];
 
   useEffect(() => {
@@ -87,8 +121,12 @@ const Events = () => {
               className="absolute flex items-center gap-[125px]"
               style={{ transform: `translateX(${scrollPosition1}%)` }}
             >
-              {eventNames.slice(0, 10).map((event, index) => (
-                <Card key={`row1-${index}`} image={img} text={event} />
+              {events.slice(0, 10).map((event, index) => (
+                <Card
+                  key={`row1-${index}`}
+                  image={event.image}
+                  text={event.name}
+                />
               ))}
             </div>
             {/* Duplicate set for seamless loop */}
@@ -96,8 +134,12 @@ const Events = () => {
               className="absolute flex items-center gap-[125px]"
               style={{ transform: `translateX(${scrollPosition1 + 103}%)` }}
             >
-              {eventNames.slice(0, 10).map((event, index) => (
-                <Card key={`row1-dup-${index}`} image={img} text={event} />
+              {events.slice(0, 10).map((event, index) => (
+                <Card
+                  key={`row1-dup-${index}`}
+                  image={event.image}
+                  text={event.name}
+                />
               ))}
             </div>
           </div>
@@ -115,8 +157,12 @@ const Events = () => {
               className="absolute flex items-center gap-[125px]"
               style={{ transform: `translateX(${scrollPosition2}%)` }}
             >
-              {eventNames.slice(10, 20).map((event, index) => (
-                <Card key={`row2-${index}`} image={img} text={event} />
+              {events.slice(10, 20).map((event, index) => (
+                <Card
+                  key={`row2-${index}`}
+                  image={event.image}
+                  text={event.name}
+                />
               ))}
             </div>
             {/* Duplicate set for seamless loop */}
@@ -124,8 +170,12 @@ const Events = () => {
               className="absolute flex items-center gap-[125px]"
               style={{ transform: `translateX(${scrollPosition2 - 103}%)` }}
             >
-              {eventNames.slice(10, 20).map((event, index) => (
-                <Card key={`row2-dup-${index}`} image={img} text={event} />
+              {events.slice(10, 20).map((event, index) => (
+                <Card
+                  key={`row2-dup-${index}`}
+                  image={event.image}
+                  text={event.name}
+                />
               ))}
             </div>
           </div>
