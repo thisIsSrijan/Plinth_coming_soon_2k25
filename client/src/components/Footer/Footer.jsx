@@ -23,7 +23,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com/company/plinthlnmiit/" target="_blank" rel="noopener noreferrer">
               <img src={linkd} alt="LinkedIn" className="w-6 h-6 sm:w-5 sm:h-5" />
             </a>
-            <a href=""><img src={Web} alt="Web" className="w-6 h-6 sm:w-5 sm:h-5" /></a>
+            <a href="mailto:plinth@lnmiit.ac.in"><img src={Web} alt="Web" className="w-6 h-6 sm:w-5 sm:h-5" /></a>
           </div>
 
           <div>
